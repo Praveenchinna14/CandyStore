@@ -14,7 +14,7 @@ withCredentials([aws(accessKeyVariable: 'AWS_ACCESS_KEY_ID', credentialsId: 'aws
       steps  {
             sh '''
             terraform init
-            terraform apply -var-file=test.tfvars -auto-approve
+            terraform apply -auto-approve
             '''
             }
         }
