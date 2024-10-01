@@ -15,7 +15,7 @@ pipeline{
             sh '''
             terraform init
             terraform plan
-            terraform apply -var-file=default.tfvars -auto-approve
+            terraform apply -var-file=test.tfvars -auto-approve
             '''
             }
         }
