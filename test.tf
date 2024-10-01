@@ -8,7 +8,7 @@ resource "aws_instance" "dev" {
   key_name = "kumar"
   vpc_security_group_ids = [ "sg-0ade4673820097009" ]
   tags = {
-    Name = "dev"
+    Name = "test"
   }
   
 provisioner "remote-exec" {
