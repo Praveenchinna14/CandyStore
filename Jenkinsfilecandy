@@ -9,14 +9,14 @@ pipeline{
 }
  }           
 }
-        stage('dev'){
-
-      steps  {
-            sh '''
-            terraform init
-            terraform plan
-            terraform apply -var-file=default.tfvars -auto-approve
-            '''
+    stage('Terraform init') {
+            steps {
+                sh 'terraform init'
+            }
+        }
+     stage('Terraform apply') {
+            steps {
+                sh 'terraform apply --auto-approve'
             }
         }
     }
