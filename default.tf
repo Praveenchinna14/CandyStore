@@ -1,6 +1,6 @@
 provider "aws" {
   region = "ap-south-1"
-withCredentials([aws(accessKeyVariable: "AWS_ACCESS_KEY_ID", credentialsId: "aws-cred", secretKeyVariable: "AWS_SECRET_ACCESS_KEY")]) {
+withCredentials([aws(accessKeyVariable= "AWS_ACCESS_KEY_ID", credentialsId= "aws-cred", secretKeyVariable= "AWS_SECRET_ACCESS_KEY")]) {
     // some block
    }
 }
