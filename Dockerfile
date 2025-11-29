@@ -2,9 +2,9 @@ FROM python:3.11
 
 ENV PYTHONUNBUFFERED 1
 
-RUN mkdir /django-sample
+RUN mkdir /django-candy
 
-WORKDIR /django-sample
+WORKDIR /django-candy
 
 COPY requirements.txt .
 
